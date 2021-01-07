@@ -24,15 +24,16 @@
             </tbody>
           </table>
           <div>
-            <form>
+            <form action="/orderplace" method="POST">
+              @csrf
                 <div class="form-group">
-                  <textarea type="email" placeholder="masukan Alamat" class="form-control" id="email"></textarea>
+                  <textarea name="address" placeholder="masukan Alamat" class="form-control" id="email"></textarea>
                 </div>
                 <div class="form-group">
                   <label>Pembayaran</label><br>
-                  <input type="radio" name="payment"> <span>transfer Bank</span><br>
-                  <input type="radio" name="payment"> <span>virtual Akun</span><br>
-                  <input type="radio" name="payment"> <span>COD</span>
+                  <input type="radio" value="cash" name="payment"> <span>transfer Bank</span><br>
+                  <input type="radio" value="cash" name="payment"> <span>virtual Akun</span><br>
+                  <input type="radio" value="cash" name="payment"> <span>COD</span>
                 </div>
                 
                 <button type="submit" class="btn btn-default">Bayar</button>

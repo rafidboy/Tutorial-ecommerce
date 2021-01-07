@@ -14,7 +14,6 @@ class UserController extends Controller
     public function login(Request $req)
     {
         $user = User::where (['email'=>$req->email])->first();
-        // return $user->password;
         if (!$user ||!Hash::check($req->password,$user->password))
         {
             return "User nama dan Password tidak ada";
@@ -23,6 +22,17 @@ class UserController extends Controller
             $req->session()->put('user',$user);
             return redirect ('/');
         }
+    }
+    function register(Request $req)
+    {
+        // return $req->input();
+        $user = new User;
+        $user->name = $req->name;
+        $user->email = $req->email;
+        $user->password =Hash::make($req->password);
+        $user->save();
+
+        return redirect('/login');
     }
 
 

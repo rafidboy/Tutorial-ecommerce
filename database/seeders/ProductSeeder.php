@@ -14,12 +14,28 @@ class ProductSeeder extends Seeder
     public function run()
     {
         DB::table('products')->insert([
-            ['nama'=>'oppo A53 ',
-            'harga'=>'300',
-            'kategori'=>'mobile',
-            'deskripsi'=>'Bagus',
-            'galeri'=>'https://www.oppo.com/content/dam/oppo/product-asset-library/a/a53/v2/specs/assets/kv.png',]
-            
+            [
+                'nama'=>'oppo A2 ',
+                'price'=>'300',
+                'kategori'=>'mobile',
+                'deskripsi'=>'Bagus',
+                'galeri'=>'https://imageshack.com/i/pnoI9ukXp'
+            ],
+            [
+                'nama'=>'oppo A32 ',
+                'price'=>'300',
+                'kategori'=>'mobile',
+                'deskripsi'=>'Bagus',
+                'galeri'=>'https://imageshack.com/i/pnoI9ukXp'
+            ],
+            [
+                'nama'=>'oppo A4 ',
+                'price'=>'300',
+                'kategori'=>'mobile',
+                'deskripsi'=>'Bagus',
+                'galeri'=>'https://imageshack.com/i/pnoI9ukXp'
+            ],
+
         ]);
     }
 }

@@ -7,7 +7,7 @@
     <div class="col-sm-4">
 
         <div class="search-item">
-            <h4>Hasil Pencarian :</h4>
+            <h4>Hasil Pencarian : </h4>
             @foreach ($products as $item)
             <div class="trending-item">
                 <a href="detail/{{$item['id']}}">

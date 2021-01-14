@@ -7,12 +7,16 @@ use App\Models\Order;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Session;
+Use Alert;
 class ProductController extends Controller
 {
     function index()
     {
-        $data= Product::all();
+        // $data= Product::orderBy('id','DESC')->skip('1')->take('6')->get();
+        $data= Product::orderBy('id','DESC')->paginate(4);
+        // dd($data);
         return view('product',['products'=>$data]);
+
     }
 
     function detail($id)
@@ -25,7 +29,14 @@ class ProductController extends Controller
     function search(Request $req)
     {
         $data = Product::where('nama','like','%'.$req->input('query').'%')->get();
-        return view('search',['products'=>$data]);
+        if($data=="nama")
+        {
+            return "data yang anda cari tidak ada";
+        }
+        else
+        {
+            return view('search',['products'=>$data]);
+        }
     }
 
     function addToCart(Request $req)
@@ -113,5 +124,21 @@ class ProductController extends Controller
         ->get();
 
         return view('myorders',['order'=>$order]);
+    }
+
+    function celana(){
+        $data= Product::all();
+        // dd($data);
+        return view('celana',['celana'=>$data]);
+    }
+
+    function kaos(){
+        $data= Product::all();
+        return view('kaos',['kaos'=>$data]);
+    }
+
+    function jaket(){
+        $data= Product::where('kategori','logo')->get();
+        return view('jaket',['jaket'=>$data]);
     }
 }

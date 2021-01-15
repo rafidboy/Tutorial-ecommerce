@@ -38,18 +38,27 @@
             </p>
       </div> 
         <div class="col-lg-3 col-sm-2 col-xs-3">
-          <h3> Kategori </h3>
+          <h3 class="ml-4"> Kategori </h3>
             <ul>
               <li> <p> Pria  </p> </li>
               <li> <p> Wanita </p> </li>
             </ul>
         </div>
         <div class="col-lg-3 col-sm-2 col-xs-3">
-          <h3> Kontak Kami </h3>
+          <h3 class="ml-4 " > Kontak Kami </h3>
             <ul>
-              <li> <p> WA:08362e32  </p> </li>
-              <li> <p> Facebook </p> </li>
-              <li> <p> Instagram </p> </li>
+              <li>
+                <i class="fab fa-whatsapp"></i>
+                 <a class="text-white" href="">z store</a>
+                </li>
+              <li > 
+                <i class="fab fa-facebook"></i>
+                <a class="text-white" href=""> z store </a> 
+              </li>
+              <li >
+                <i class="fab fa-instagram"></i>
+                <a class="text-white" href="">  z store  </a>
+              </li>
             </ul>
         </div>            
         <div class="footer-bottom">

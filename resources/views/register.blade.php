@@ -6,11 +6,9 @@
       <!-- The image half -->
 
 
-      <!-- The content half -->
       <div class="col-md-6 bg-light">
           <div class="login d-flex align-items-center py-5">
 
-              <!-- Demo content-->
               <div class="container">
                   <div class="row">
                       <div class="col-lg-10 col-xl-7 mx-auto">
@@ -38,7 +36,7 @@
 
           </div>
       </div>
-      <div class="col-md-6 d-none d-md-flex bg-image1"></div>
+      <div class="col-md-6 d-none d-md-flex bg-image1 image"></div>
 
   </div>
 </div>

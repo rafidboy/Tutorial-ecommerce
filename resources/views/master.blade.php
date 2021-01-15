@@ -7,6 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Penjualan Produk</title>
     <link rel="icon" type="image/jpg" href="{{url('ok.jpg')}}">    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css ">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -59,11 +61,11 @@
     }
     .pagination {
         justify-content: center;
-        margin-top: 100px;
+        margin-top: 10px;
         padding-bottom: 2%;
     }
     .produk-home{
-        background-color:#5ac8e75d;
+        background-color:#9eaaad2a;
         padding-left: 5%;
         padding-right: 5%;
     }
@@ -133,7 +135,6 @@
   }
   /* dropdown */
 
-  .login,
 .image {
   min-height: 100vh;
 }
@@ -148,7 +149,40 @@
   background-size: cover;
   background-position: center center;
 }
-    
+.font{
+  font-family: "Trirong", serif;;
+  font-size: 20px;
+  
+}
+.profile{
+  margin-left: 200px;
+  margin-top: 10px;
+  margin-right:200px ;
+}
+.bg-1{
+  background-color: rgba(58, 124, 110, 0.644);
+}
+.bg-1:hover{
+  background-color:rgba(59, 214, 181, 0.644);
+
+}
+.text-putih{
+  color: #f9f9f9;
+}
+.text-putih:hover{
+  color: black;
+}
+.zoom {
+    transition: transform .2s; /* Animation */
+    margin: 0 auto;
+  }
+  
+  .zoom:hover {
+    transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+.card-product-list {
+    margin-bottom: 20px;
+}
 </style>
 
 

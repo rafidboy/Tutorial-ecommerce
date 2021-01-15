@@ -1,9 +1,9 @@
 @extends('master')
 @section('content')
 
-<div class="container-fluid">
+<div class="container-fluid ">
   <div class="row no-gutter">
-      <div class="col-md-6 d-none d-md-flex bg-image"></div>
+      <div class="col-md-6 d-none d-md-flex bg-image image" ></div>
       <div class="col-md-6 bg-light">
           <div class="login d-flex align-items-center py-5">
               <div class="container">

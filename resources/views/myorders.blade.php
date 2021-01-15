@@ -1,5 +1,6 @@
 @extends('master')
 @section('content')
+
 <div class="custom-product">
     <div class="row container">
         <div class="search-item">

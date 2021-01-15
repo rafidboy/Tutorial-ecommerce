@@ -8,7 +8,7 @@ if (Session::has('user')) {
 ?>
 
 
-<nav style="" class=" navbar navbar-expand-lg navbar-light gradient-nav ">
+<nav style="height: 60px;" class=" navbar navbar-expand-lg navbar-light gradient-nav ">
   <a class="navbar-brand" href="/">
     
     <img src="https://imageshack.com/i/pnoI9ukXp" width="50" height="50" class="d-inline-block align-top" alt="">
@@ -18,13 +18,13 @@ if (Session::has('user')) {
     <ul class="navbar-nav mr-auto">
       @if (Session::has('user'))
       <li class="nav-item active">
-        <a class="nav-link" href="/">HOME <span class="sr-only">(current)</span></a>
+        <a class="nav-link font" href="/">Home</a>
       </li>
       <li class="nav-item active">
-        <a class="nav-link" href="myorders">PEMBELIAN <span class="sr-only">(current)</span></a>
+        <a class="nav-link font" href="myorders">Pesanan saya</a>
       </li>
       @else 
-      <li class="nav-item active"><a class="nav-link" href="/">Home</a></li>
+      <li class="nav-item active font"><a class="nav-link" href="/">Home</a></li>
       @endif
     </ul>
     
@@ -39,7 +39,7 @@ if (Session::has('user')) {
     <ul class="navbar-nav">
       @if (Session::has('user'))
     <li class="nav-item "> 
-      <a class="nav-link" href="/cartlist">
+      <a class="nav-link mt-2" href="/cartlist">
         <img  src="https://imageshack.com/i/poyoOx8Mp" height="30" width="30" alt="">{{$total}}
       </a>
     
@@ -64,14 +64,14 @@ if (Session::has('user')) {
     
 
     <li class="nav-item dropdown no-arrow">
-      <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        <span class="mr-2 d-none d-lg-inline text-gray-600 small">{{Session::get('user')['name']}}</span>
-        <img class="img-profile rounded-circle" src="https://imageshack.com/i/poO9pCpMp" eight="30" width="30">
+      <a class="nav-link ml-2 " href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <img class="img-profile rounded-circle" src="https://imageshack.com/i/poO9pCpMp" eight="30" width="30"><br>
+        <span class=" mr-1 d-none d-lg-inline text-gray-600 small">{{Session::get('user')['name']}}</span>
       </a>
       <!-- Dropdown - User Information -->
       <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
         <a class="dropdown-item" href="/profile">
-          <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+          <i class=" fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
           Profile
         </a>
         <a class="dropdown-item" href="#">
@@ -84,7 +84,7 @@ if (Session::has('user')) {
         </a>
         <div class="dropdown-divider"></div>
         <a class="dropdown-item" href="/logout" ">
-          <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+          <i class=" fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
           Logout
         </a>
       </div>

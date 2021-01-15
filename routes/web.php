@@ -38,3 +38,4 @@ Route::get("myorders",[ProductController::class,'myOrders']);
 Route::get("celana",[ProductController::class,'celana']);
 Route::get("kaos",[ProductController::class,'kaos']);
 Route::get("jaket",[ProductController::class,'jaket']);
+Route::get("profile",[UserController::class,'profile']);
